@@ -3,3 +3,5 @@ description: "Insights on AI automation, research, and projects"
 theme: jekyll-theme-minimal
 baseurl: "/blog"
 permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
