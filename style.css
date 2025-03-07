@@ -59,3 +59,25 @@ p {
 strong {
     color: #888888; /* Highlight important text in gray */
 }
+
+#linkedin-generator {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#linkedin-generator h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#linkedin-generator p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+}
