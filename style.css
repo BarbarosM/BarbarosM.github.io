@@ -81,3 +81,11 @@ strong {
     color: #555;
     line-height: 1.5;
 }
+
+#center calendar button
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; /* optional spacing */
+}
