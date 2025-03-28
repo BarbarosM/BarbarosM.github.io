@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Calendar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,25 +17,24 @@
     </header>
     <main>
         <h2>Calendar</h2>
-
-<!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ34tmMJNX6R_9uh-JBXuAwkF5i38i4wwExHx02Vz_7tJrLV0nhfzmhGandauWY4I_CzavUXfZxv?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
-
+    
+        <!-- Container for the calendar button -->
+        <div id="calendar-button"></div>
+    
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ34tmMJNX6R_9uh-JBXuAwkF5i38i4wwExHx02Vz_7tJrLV0nhfzmhGandauWY4I_CzavUXfZxv?gv=true',
+                color: '#039BE5',
+                label: 'Book an appointment',
+                target: document.getElementById('calendar-button'),
+            });
+        });
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
     </main>
 </body>
 </html>
