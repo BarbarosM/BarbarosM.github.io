@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Project</title>
+</head>
+<body>
+  <h1>Create New Project</h1>
+  <form action="https://your-workspace.n8n.cloud/webhook/project-create" method="POST">
+    <label>Project Code: <input name="project_code" required></label><br><br>
+    <label>Project Description: <input name="project_omschrijving" required></label><br><br>
+    <label>Project Leader: <input name="projectleider"></label><br><br>
+    <label>Client (Relatie): <input name="relatie"></label><br><br>
+    <label>Contact Person: <input name="contactpersoon"></label><br><br>
+    <label>Client PO Number: <input name="klant_bestelnr"></label><br><br>
+    <label>Type: <input name="type"></label><br><br>
+    <label>Classification: <input name="classificatie"></label><br><br>
+    <label>Active Period (e.g. 2024-06-01 - 2024-12-31): <input name="actief_vanaf_tot"></label><br><br>
+    <label>Price Agreement: <input name="prijsafspraak"></label><br><br>
+    <label>Notes: <textarea name="notities"></textarea></label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
