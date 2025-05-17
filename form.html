@@ -1,25 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Create Project</title>
+  <title>Nieuw Project Aanmaken</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 700px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .row > div {
+      flex: 1;
+    }
+
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Create New Project</h1>
-  <form action="https://your-workspace.n8n.cloud/webhook/project-create" method="POST">
-    <label>Project Code: <input name="project_code" required></label><br><br>
-    <label>Project Description: <input name="project_omschrijving" required></label><br><br>
-    <label>Project Leader: <input name="projectleider"></label><br><br>
-    <label>Client (Relatie): <input name="relatie"></label><br><br>
-    <label>Contact Person: <input name="contactpersoon"></label><br><br>
-    <label>Client PO Number: <input name="klant_bestelnr"></label><br><br>
-    <label>Type: <input name="type"></label><br><br>
-    <label>Classification: <input name="classificatie"></label><br><br>
-    <label>Active Period (e.g. 2024-06-01 - 2024-12-31): <input name="actief_vanaf_tot"></label><br><br>
-    <label>Price Agreement: <input name="prijsafspraak"></label><br><br>
-    <label>Notes: <textarea name="notities"></textarea></label><br><br>
+  <form action="https://antroposoft.n8n.cloud/webhook/project-create" method="POST">
+    <h1>Nieuw Project Aanmaken</h1>
 
-    <button type="submit">Submit</button>
+    <label for="project_code">Code | Code</label>
+    <input id="project_code" name="project_code" required>
+
+    <label for="project_omschrijving">Omschrijving | Description</label>
+    <input id="project_omschrijving" name="project_omschrijving" required>
+
+    <label for="projectleider">Projectleider | Project Manager</label>
+    <input id="projectleider" name="projectleider">
+
+    <label for="relatie">Relatie | Account</label>
+    <input id="relatie" name="relatie">
+
+    <label for="contactpersoon">Contactpersoon | Contact</label>
+    <input id="contactpersoon" name="contactpersoon">
+
+    <label for="klant_bestelnr">Klant bestelnr. | Customer PO Number</label>
+    <input id="klant_bestelnr" name="klant_bestelnr">
+
+    <label for="type">Type | Type</label>
+    <input id="type" name="type">
+
+    <label for="classificatie">Classificatie | Classification</label>
+    <input id="classificatie" name="classificatie">
+
+    <div class="row">
+      <div>
+        <label for="actief_vanaf">Actief vanaf | Active from</label>
+        <input id="actief_vanaf" name="actief_vanaf" type="date">
+      </div>
+      <div>
+        <label for="actief_tot">Actief tot | Active to</label>
+        <input id="actief_tot" name="actief_tot" type="date">
+      </div>
+    </div>
+
+    <label for="notities">Notities | Notes</label>
+    <textarea id="notities" name="notities" rows="4"></textarea>
+
+    <button type="submit">Verstuur Project</button>
   </form>
 </body>
 </html>
