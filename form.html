@@ -53,20 +53,20 @@
     }
 
     button {
-      margin-top: 2rem;
-      width: 100%;
-      padding: 1rem;
-      font-size: 1rem;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #d3d3d3; /* Light grey */
+  color: #333; /* Darker text for contrast */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-    button:hover {
-      background-color: #0056b3;
-    }
+button:hover {
+  background-color: #bbb; /* Slightly darker grey on hover */
+}
   </style>
 </head>
 <body>
@@ -74,28 +74,28 @@
     <h1>Nieuw Project Aanmaken</h1>
 
     <label for="project_code">Code | Code</label>
-    <input id="project_code" name="project_code" required>
+    <input id="project_code" name="project_code" required placeholder="PRJ-2024-001">
 
     <label for="project_omschrijving">Omschrijving | Description</label>
-    <input id="project_omschrijving" name="project_omschrijving" required>
+    <input id="project_omschrijving" name="project_omschrijving" required placeholder="Nieuw project voor klant X">
 
     <label for="projectleider">Projectleider | Project Manager</label>
-    <input id="projectleider" name="projectleider">
+    <input id="projectleider" name="projectleider" placeholder="Jan Jansen">
 
     <label for="relatie">Relatie | Account</label>
-    <input id="relatie" name="relatie">
+    <input id="relatie" name="relatie" placeholder="Pro Infra Project Support B.V.">
 
     <label for="contactpersoon">Contactpersoon | Contact</label>
-    <input id="contactpersoon" name="contactpersoon">
+    <input id="contactpersoon" name="contactpersoon" placeholder="Pieter Pietersen">
 
     <label for="klant_bestelnr">Klant bestelnr. | Customer PO Number</label>
-    <input id="klant_bestelnr" name="klant_bestelnr">
+    <input id="klant_bestelnr" name="klant_bestelnr" placeholder="PO-2024-3341">
 
     <label for="type">Type | Type</label>
-    <input id="type" name="type">
+    <input id="type" name="type" placeholder="2">
 
     <label for="classificatie">Classificatie | Classification</label>
-    <input id="classificatie" name="classificatie">
+    <input id="classificatie" name="classificatie" placeholder="A / B / C">
 
     <div class="row">
       <div>
@@ -109,7 +109,7 @@
     </div>
 
     <label for="notities">Notities | Notes</label>
-    <textarea id="notities" name="notities" rows="4"></textarea>
+    <textarea id="notities" name="notities" rows="4" placeholder="Belangrijk: opleverdatum 1 juli."></textarea>
 
     <button type="submit">Verstuur Project</button>
   </form>
