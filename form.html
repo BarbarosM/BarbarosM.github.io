@@ -92,7 +92,14 @@ button:hover {
     <input id="klant_bestelnr" name="klant_bestelnr" placeholder="PO-2024-3341">
 
     <label for="type">Type | Type</label>
-    <input id="type" name="type" placeholder="2">
+    <select id="type" name="type" required>
+        <option value="" disabled selected>Selecteer type</option>
+        <option value="1">Campaign</option>
+        <option value="2">Fixed Price</option>
+        <option value="3">Time and Material</option>
+        <option value="4">Non billable</option>
+        <option value="5">Prepaid</option>
+    </select>
 
     <label for="classificatie">Classificatie | Classification</label>
     <input id="classificatie" name="classificatie" placeholder="A / B / C">
