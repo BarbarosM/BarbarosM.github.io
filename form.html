@@ -77,7 +77,7 @@ button:hover {
 
       if (data.nextCode) {
         const codeInput = document.getElementById("project_code");
-        codeInput.placeholder = data.nextCode;
+        codeInput.value = data.nextCode; // <-- this line ensures the form sends the value
       }
     } catch (err) {
       console.error("Failed to fetch next code:", err);
