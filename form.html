@@ -71,6 +71,9 @@ button:hover {
 </head>
 <script>
   window.addEventListener('DOMContentLoaded', async () => {
+    // Set today's date in YYYY-MM-DD format
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('actief_vanaf').value = today;
     try {
       const response = await fetch("https://antroposoft.app.n8n.cloud/webhook-test/get-next-project-code");
       const data = await response.json();
@@ -127,7 +130,7 @@ button:hover {
       </div>
       <div>
         <label for="actief_tot">Actief tot | Active to</label>
-        <input id="actief_tot" name="actief_tot" type="date">
+        <input id="actief_tot" name="actief_tot" type="date" required>
       </div>
     </div>
 
