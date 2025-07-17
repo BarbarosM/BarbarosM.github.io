@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Test Account – Exact Online</title>
+</head>
+<body>
+  <h1>Request Test Account for Exact Online</h1>
+  <form method="POST" action="/submit">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="company">Company Name (optional):</label><br>
+    <input type="text" id="company" name="company"><br><br>
+
+    <label for="role">Requested Access Level:</label><br>
+    <select id="role" name="role" required>
+      <option value="read_only">Read Only</option>
+      <option value="standard_user">Standard User</option>
+      <option value="admin_access">Admin Access</option>
+    </select><br><br>
+
+    <label for="reason">Reason for Test Access:</label><br>
+    <textarea id="reason" name="reason" rows="4" cols="40" required></textarea><br><br>
+
+    <label>
+      <input type="checkbox" name="consent" required>
+      I consent to the processing of my data for test access setup (GDPR).
+    </label><br><br>
+
+    <input type="submit" value="Submit Request">
+  </form>
+</body>
+</html>
