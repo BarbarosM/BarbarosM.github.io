@@ -81,17 +81,17 @@
     <label for="role" class="required">Toegangsrechten</label>
     <select id="role" name="role" required>
       <option value="" disabled selected>Selecteer rol</option>
-      <option value="read_only">Alleen Lezen</option>
-      <option value="standard_user">Standaard Gebruiker</option>
-      <option value="admin_access">Beheerder</option>
+      <!--<option value="read_only">Alleen Lezen</option>-->
+      <option value="standard_user">Standaard Tester</option>
+      <!--<option value="admin_access">Beheerder</option>-->
     </select>
 
-    <label for="reason" class="required">Reden voor toegang</label>
-    <textarea id="reason" name="reason" rows="4" required placeholder="Bijv. testen van koppeling met onze software."></textarea>
+    <label for="reason">Reden voor toegang</label>
+    <textarea id="reason" name="reason" rows="4" required placeholder="Test koppeling met Exact Online"></textarea>
 
     <label>
+    Ik geef toestemming voor het verwerken van mijn gegevens voor deze aanvraag (AVG).
       <input type="checkbox" name="consent" required>
-      Ik geef toestemming voor het verwerken van mijn gegevens voor deze aanvraag (AVG).
     </label>
 
     <button type="submit">Aanvraag Verzenden</button>
