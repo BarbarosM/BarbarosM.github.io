@@ -138,7 +138,13 @@
 
     <label for="notities">Notities | Notes</label>
     <textarea id="notities" name="notities" rows="4" placeholder="Belangrijk: opleverdatum 1 juli."></textarea>
-
+    <!-- M365 Provisioning: Teams channel + SharePoint folders -->
+    <!-- Optional: send an explicit "false" when unchecked -->
+    <input type="hidden" name="provision_m365" value="0">
+    <label for="provision_m365" class="checkbox" style="display:flex;align-items:center;gap:.5rem;margin-top:1rem;">
+    <input type="checkbox" id="provision_m365" name="provision_m365" value="1" checked>
+    Create a channel in Teams and add Folder structure to SharePoint
+    </label>
     <button type="submit">Verstuur Project</button>
   </form>
 </body>
