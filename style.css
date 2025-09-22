@@ -44,7 +44,7 @@ main {
     color: white;
     display: grid;
     place-items: center;
-    padding: 30px;
+    padding: 0;
 /*
     max-width: 900px;
     margin: 40px auto;
