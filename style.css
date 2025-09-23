@@ -8,14 +8,14 @@ body {
     line-height: 1.6;
 }
 
-/* Header 
+Header 
 header {
     background-color: #333;
     color: white;
     padding: 15px;
     text-align: center;
 }
-
+/*
 header {
   background: url("images/filters_quality_70.webp") no-repeat center center;
   background-size: cover;
@@ -38,21 +38,15 @@ nav a:hover {
 
 /* Main Content */
 main {
-    background: url("images/filters_quality_70.webp") no-repeat center center;
-    background-size: cover;
-    min-height: 100vh; /* full viewport height */
-    color: white;
-    display: grid;
-    place-items: center;
-    padding: 0;
-/*
+    
+/
     max-width: 900px;
     margin: 40px auto;
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    */
+
 }
 
 /* Headings */
